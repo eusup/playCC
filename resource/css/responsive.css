@@ -1,0 +1,471 @@
+@media screen and (max-width : 1600px) {
+  .box dl {
+    flex-direction: column;
+  }
+
+  .contents-wrap .card-wrap .grid-wrap .grid-sizer,
+  .contents-wrap .card-wrap .grid-wrap .box {
+    width: calc((100% - (20px * 2)) / 2);
+  }
+}
+
+@media screen and (max-width : 1280px) {
+
+  .contents-wrap .card-wrap .grid-wrap .grid-sizer,
+  .contents-wrap .card-wrap .grid-wrap .box {
+    width: 100%;
+  }
+
+  .myPage .grid-wrap .grid-sizer,
+  .myPage .grid-wrap .box {
+    width: calc((100% - (20px * 2)) / 3);
+  }
+
+  .sunun>ul .samyung-card {
+    width: calc((100% - 40px) / 3);
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width : 1024px) {
+  .wrap {
+    padding: 20px;
+  }
+
+  header {
+    margin-bottom: 10px;
+  }
+
+  .contents-wrap {
+    flex-direction: column;
+  }
+
+  .box {
+    padding: 10px;
+  }
+
+  .box .title {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+
+  .box dl {
+    gap: 0px;
+  }
+
+  .contents-wrap nav {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .contents-wrap nav ul {
+    width: 100%;
+    flex-direction: row;
+    padding: 4px;
+  }
+
+  .contents-wrap nav li {
+    width: 100%;
+  }
+
+  .contents-wrap nav li a {
+    flex-direction: column;
+    gap: 0;
+    padding: 6px;
+    border-radius: 18px;
+    font-size: 1.5rem;
+  }
+
+  .contents-wrap nav li a img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .contents-wrap .card-wrap .card-edit {
+    height: 100%;
+  }
+
+  .sunun>ul .samyung-card {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .myPage .grid-wrap .grid-sizer,
+  .myPage .grid-wrap .box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width : 768px) {
+
+  :root {
+    --font-regular: 1.4rem;
+    --font-small: 1.3rem;
+  }
+
+  .wrap {
+    height: auto;
+  }
+
+  input,
+  select,
+  .select.white-border,
+  textarea {
+    padding: 10px;
+  }
+
+  .input-wrap .white-border {
+    width: 100%;
+  }
+
+  header .box img {
+    height: 28px;
+  }
+
+  header .box .btn {
+    padding: 12px 32px;
+    font-size: 1.6rem;
+  }
+
+  .box .title-big img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .box .title-big {
+    padding: 0;
+    font-size: 2.4rem;
+  }
+
+  /* menu */
+  .contents-wrap nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    padding: 35px 10px;
+    border-left: 1px solid var(--color-white40);
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: rgba(25, 27, 30, 0.3);
+    backdrop-filter: blur(40px);
+    box-shadow: -20px 0 40px rgba(25, 27, 30, 0.5);
+    z-index: 2;
+  }
+
+  .contents-wrap nav .btn.btn-close {
+    display: flex;
+    margin-right: 25px;
+
+    & img {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  .contents-wrap nav ul.white {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    background: none;
+  }
+
+  .contents-wrap nav li a {
+    flex-direction: row;
+    padding: 20px 6px;
+  }
+
+  header .btn-wrap .m-menu {
+    display: block;
+  }
+
+  /* menu end */
+
+  .contents-wrap .card-wrap .card-edit {
+    position: relative;
+    flex-shrink: 1;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid var(--color-white40);
+  }
+
+  .contents-wrap .card-wrap .grid-wrap .grid-sizer,
+  .contents-wrap .card-wrap .grid-wrap .box {
+    flex-shrink: 0;
+  }
+
+  .contents-wrap .card-wrap {
+    flex-direction: column;
+  }
+
+  .notice .input-wrap .select {
+    max-width: 110px;
+  }
+
+  .notice .input-wrap .white {
+    margin: 0;
+    font-size: var(--font-regular);
+  }
+
+  .notice-table table thead {
+    display: none;
+  }
+
+  .notice-table table tr {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+  }
+
+  .notice-table table tr td {
+    width: 50%;
+    padding: 0;
+    font-size: var(--font-regular);
+
+    &.t-num {
+      font-size: 1.3rem;
+      color: var(--color-white60);
+      order: 1;
+    }
+
+    &.t-date {
+      font-size: 1.3rem;
+      color: var(--color-white60);
+      text-align: right;
+      order: 2;
+    }
+
+    &.t-title {
+      width: calc(100% - 115px);
+      order: 3;
+    }
+
+    &.t-writer {
+      width: 115px;
+      text-align: right;
+      order: 4;
+    }
+  }
+
+  .page-num .btn {
+    font-size: var(--font-regular);
+  }
+
+  .notice-item div.title .flex {
+    font-size: 2.2rem;
+  }
+
+  .notice-item .file-wrap ul li a,
+  .notice-item .write-done .btn {
+    font-size: var(--font-regular);
+  }
+
+  .notice-item div.item {
+    padding: 14px 0;
+  }
+
+  .notice-item .file-wrap .heading,
+  .notice-item .edit-option-wrap p,
+  .notice-item .edit-option-wrap .edit-option-btn li .btn {
+    font-size: 1.3rem;
+  }
+
+  .notice-item .file-wrap .heading {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .page-num.type2 .btn {
+    height: auto;
+  }
+
+  .page-num .btn.arrow i {
+    font-size: 2rem;
+  }
+
+  .notice-item .edit-option-wrap {
+    flex-wrap: wrap;
+  }
+
+  .flex.calendar-wrap .calendar .select p,
+  .notice-item .fill p {
+    font-size: 1.4rem;
+  }
+
+  .flex.calendar-wrap .calendar {
+    max-width: 128px;
+  }
+
+  .notice-item .write-done {
+    justify-content: flex-end;
+  }
+
+  .notice-list a {
+    font-size: 1.4rem;
+  }
+
+  .notice-list a .list-title {
+    font-size: 1.6rem;
+  }
+
+  .notice-list a .data p {
+    font-size: 1.3rem;
+  }
+
+  .notice-schedule table thead {
+    display: none;
+  }
+
+  .notice-schedule table tr {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .notice-schedule table tbody tr:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  .notice-schedule table tbody tr td {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+
+    &>div p::before {
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      right: 0;
+    }
+
+    &:nth-child(1)>div p::before {
+      content: "Sun";
+      color: #FF7B7B;
+    }
+
+    &:nth-child(2)>div p::before {
+      content: "Mon";
+    }
+
+    &:nth-child(3)>div p::before {
+      content: "Tue";
+    }
+
+    &:nth-child(4)>div p::before {
+      content: "Wed";
+    }
+
+    &:nth-child(5)>div p::before {
+      content: "Thu";
+    }
+
+    &:nth-child(6)>div p::before {
+      content: "Fri";
+    }
+
+    &:nth-child(7)>div p::before {
+      content: "Sat";
+      color: #FF7B7B;
+    }
+  }
+
+  .notice-schedule table tbody tr td div {
+    text-align: inherit;
+  }
+
+  .notice-schedule table tbody tr td div>p {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: var(--font-small);
+  }
+
+  .notice-schedule table tbody tr td div .scroll-cover ul li .btn {
+    font-size: var(--font-small);
+
+    &.blue {
+      background-color: rgba(91, 149, 255, 0.2);
+    }
+
+    &.orange {
+      background-color: rgba(255, 167, 44, 0.2);
+    }
+  }
+
+  .sunun>ul .samyung-card {
+    width: 100%;
+  }
+
+  .myPage .black{
+    gap: 14px;
+  }
+
+  .myPage .box.tab ul li .btn {
+    font-size: 1.8rem;
+  }
+
+  .myPage .black .user-data>p span:first-child{
+    font-size: 1.6rem;
+  }
+
+  .myPage .black .user-data>p span.position{
+    font-size: var(--font-small);
+  }
+  
+  .myPage .box.tab{
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width : 500px) {
+  .notice-item .write-done {
+    flex-wrap: wrap;
+  }
+
+  .notice-item .write-done .hold {
+    position: static;
+    transform: translate(0);
+  }
+
+  .notice-item .write-done .btn {
+    width: 100%;
+  }
+
+  .notice-list a {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .notice-list a .thumb {
+    width: 100%;
+    height: auto;
+
+    &::before {
+      position: static;
+      display: block;
+      padding-top: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 40%;
+    }
+  }
+
+  .notice-list a .thumb img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .myPage .box.tab ul li .btn {
+    font-size: 1.6rem;
+  }
+
+  .tab ul li {
+    width: 100%;
+  }
+}

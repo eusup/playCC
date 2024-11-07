@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="./resource/js/jquery-3.3.1.min.js"></script>
+  <script src="./resource/js/masonry.pkgd.min.js"></script>
+  <script src="./resource/js/style.js"></script>
+  <link rel="icon" href="./resource/favicon.svg">
+
+  <link rel="stylesheet" href="./resource/css/remixicon.css">
+  <link rel="stylesheet" href="./resource/css/module.css">
+  <link rel="stylesheet" href="./resource/css/style.css">
+  <link rel="stylesheet" href="./resource/css/responsive.css">
+  <title>플레이청취</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="box white flex">
+        <h1>
+          <a href="/index.html">
+            <img src="./resource/images/logo.svg" alt="홈으로">
+          </a>
+        </h1>
+        <div class="btn-wrap">
+          <button id="loginBtn" class="btn">로그인</button>
+          <button class="m-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="contents-wrap flex">
+      <nav>
+        <ul class="box white">
+          <li>
+            <a href="./index.html" class="flex ">
+              <img src="./resource/images/icn-nav01.svg" alt="#">
+              <span>감사카드</span>
+            </a>
+          </li>
+          <li>
+            <a href="./sub02_notice-alert.html" class="flex">
+              <img src="./resource/images/icn-nav02.svg" alt="#">
+              <span>공지사항</span>
+            </a>
+          </li>
+          <li>
+            <a href="./sub03_notice-free.html" class="flex">
+              <img src="./resource/images/icn-nav03.svg" alt="#">
+              <span>자유게시판</span>
+            </a>
+          </li>
+          <li>
+            <a href="./sub04_schedule.html" class="flex act">
+              <img src="./resource/images/icn-nav04.svg" alt="#">
+              <span>일정</span>
+            </a>
+          </li>
+          <li>
+            <a href="./sub05_sunun.html" class="flex">
+              <img src="./resource/images/icn-nav05.svg" alt="#">
+              <span>사명선언문</span>
+            </a>
+          </li>
+          <li>
+            <a href="./sub06_myPage.html" class="flex">
+              <img src="./resource/images/icn-nav06.svg" alt="#">
+              <span>마이페이지</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex">
+              <img src="./resource/images/icn-nav07.svg" alt="#">
+              <span>북마크</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="notice box white">
+        <h3 class="flex title-big">
+          <img src="./resource/images/icn-nav04.svg" alt="#">
+          <p>일정</p>
+        </h3>
+        <div class="notice-schedule">
+          <div class="flex calendar-title">
+            <button class="btn arrow">
+              <img src="./resource/images/icn-dropDown.svg" alt="이전 달" class="prev">
+            </button>
+            <p>September 2024</p>
+            <button class="btn arrow">
+              <img src="./resource/images/icn-dropDown.svg" alt="다음달" class="next">
+            </button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="other-month">
+                  <div>
+                    <p>1</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>2</p>
+                    <div class="scroll-cover">
+                      <ul>
+                        <li>
+                          <button class="btn none-style blue">
+                            <span>연차: </span>
+                            <span>사람이름</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="btn none-style orange">
+                            <span>생일: </span>
+                            <span>사람이름</span>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>3</p>
+                  </div>
+                </td>
+                <td class="today">
+                  <div>
+                    <p>4</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>5</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>6</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>7</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    <p>8</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>9</p>
+                    <div class="scroll-cover">
+                      <ul>
+                        <li>
+                          <button class="btn none-style blue">
+                            <span>연차: </span>
+                            <span>사람이름</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="btn none-style orange">
+                            <span>생일: </span>
+                            <span>사람이름</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="btn none-style orange">
+                            <span>생일: </span>
+                            <span>사람이름</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="btn none-style orange">
+                            <span>생일: </span>
+                            <span>사람이름</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="btn none-style orange">
+                            <span>생일: </span>
+                            <span>사람이름</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="btn none-style orange">
+                            <span>생일: </span>
+                            <span>사람이름</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="btn none-style orange">
+                            <span>생일: </span>
+                            <span>사람이름</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="btn none-style orange">
+                            <span>생일: </span>
+                            <span>사람이름</span>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>10</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>11</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>12</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>13</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>14</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    <p>15</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>16</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>17</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>18</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>19</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>20</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>21</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    <p>22</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>23</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>24</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>25</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>26</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>27</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>28</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    <p>29</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>30</p>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <p>31</p>
+                  </div>
+                </td>
+                <td class="other-month">
+                  <div>
+                    <p>1</p>
+                  </div>
+                </td>
+                <td class="other-month">
+                  <div>
+                    <p>2</p>
+                  </div>
+                </td>
+                <td class="other-month">
+                  <div>
+                    <p>3</p>
+                  </div>
+                </td>
+                <td class="other-month">
+                  <div>
+                    <p>4</p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    <div class="dimmed">
+      <div class="popup box scadule-box">
+        <div class="btn-wrap">
+          <div class="title">
+            <span class="tag blue">연차</span>
+            <span>누구누구 생일</span>
+          </div>
+          <button class="btn btn-close">
+            <img src="/resource/images/icn-close-white.svg" alt="팝업 닫기">
+          </button>
+        </div>
+        <p>아 생일 너무 좋다</p>
+      </div>
+      <div class="popup box loginBox">
+        <div class="btn-wrap">
+          <button class="btn btn-close">
+            <img src="/resource/images/icn-close-white.svg" alt="팝업 닫기">
+          </button>
+        </div>
+        <img src="/resource/images/logo.svg" alt="#" class="logo">
+        <div class="input-wrap">
+          <label for="idLabel" class="white-border">
+            <p>아이디</p>
+            <input type="text" placeholder="아이디를 입력하세요">
+          </label>
+          <label for="pwLabel" class="white-border">
+            <p>비밀번호</p>
+            <input type="pw" placeholder="비밀번호를 입력하세요">
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

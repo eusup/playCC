@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="./resource/js/jquery-3.3.1.min.js"></script>
+  <script src="./resource/js/masonry.pkgd.min.js"></script>
+  <script src="./resource/js/style.js"></script>
+  <link rel="icon" href="./resource/favicon.svg">
+
+  <link rel="stylesheet" href="./resource/css/remixicon.css">
+  <link rel="stylesheet" href="./resource/css/module.css">
+  <link rel="stylesheet" href="./resource/css/style.css">
+  <link rel="stylesheet" href="./resource/css/responsive.css">
+  <title>플레이청취</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="box white flex">
+        <h1>
+          <a href="/index.html">
+            <img src="./resource/images/logo.svg" alt="홈으로">
+          </a>
+        </h1>
+        <div class="btn-wrap">
+          <button id="loginBtn" class="btn">로그인</button>
+          <button class="m-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="contents-wrap flex">
+      <nav>
+        <ul class="box white">
+          <li>
+            <a href="./index.html" class="flex ">
+              <img src="./resource/images/icn-nav01.svg" alt="#">
+              <span>감사카드</span>
+            </a>
+          </li>
+          <li>
+            <a href="./sub02_notice-alert.html" class="flex">
+              <img src="./resource/images/icn-nav02.svg" alt="#">
+              <span>공지사항</span>
+            </a>
+          </li>
+          <li>
+            <a href="./sub03_notice-free.html" class="flex act">
+              <img src="./resource/images/icn-nav03.svg" alt="#">
+              <span>자유게시판</span>
+            </a>
+          </li>
+          <li>
+            <a href="./sub04_schedule.html" class="flex">
+              <img src="./resource/images/icn-nav04.svg" alt="#">
+              <span>일정</span>
+            </a>
+          </li>
+          <li>
+            <a href="./sub05_sunun.html" class="flex">
+              <img src="./resource/images/icn-nav05.svg" alt="#">
+              <span>사명선언문</span>
+            </a>
+          </li>
+          <li>
+            <a href="./sub06_myPage.html" class="flex">
+              <img src="./resource/images/icn-nav06.svg" alt="#">
+              <span>마이페이지</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex">
+              <img src="./resource/images/icn-nav07.svg" alt="#">
+              <span>북마크</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="notice box white">
+        <h3 class="flex title-big">
+          <img src="./resource/images/icn-nav02.svg" alt="#">
+          <p>자유게시판</p>
+        </h3>
+        <div class="notice-item">
+          <label for="#" class="input-label white-border fill">
+            <p>제목</p>
+            <input type="text" placeholder="제목을 입력해 주세요">
+          </label>
+          <div class="white-border fill">
+            <p>기간</p>
+            <div class="flex calendar-wrap">
+              <label for="#" class="input-label calendar">
+                <div class="select white-border">
+                  <p>9999.99.99</p>
+                  <div class="option calendar-table">
+                    <table>
+                      <colgroup>
+                        <col width="">
+                        <col width="">
+                        <col width="">
+                        <col width="">
+                        <col width="">
+                        <col width="">
+                        <col width="">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>일</th>
+                          <th>월</th>
+                          <th>화</th>
+                          <th>수</th>
+                          <th>목</th>
+                          <th>금</th>
+                          <th>토</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="today">1</td>
+                          <td>2</td>
+                          <td>3</td>
+                          <td>4</td>
+                          <td>5</td>
+                          <td>6</td>
+                          <td>7</td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>9</td>
+                          <td>10</td>
+                          <td>11</td>
+                          <td>12</td>
+                          <td>13</td>
+                          <td>14</td>
+                        </tr>
+                        <tr>
+                          <td>15</td>
+                          <td>16</td>
+                          <td>17</td>
+                          <td>18</td>
+                          <td>19</td>
+                          <td>20</td>
+                          <td>21</td>
+                        </tr>
+                        <tr>
+                          <td>22</td>
+                          <td>23</td>
+                          <td>24</td>
+                          <td>25</td>
+                          <td>26</td>
+                          <td>27</td>
+                          <td>28</td>
+                        </tr>
+                        <tr>
+                          <td>29</td>
+                          <td>30</td>
+                          <td>31</td>
+                          <td class="other-month">1</td>
+                          <td class="other-month">2</td>
+                          <td class="other-month">3</td>
+                          <td class="other-month">4</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </label>
+              ~
+              <label for="#" class="input-label calendar">
+                <div class="select white-border">
+                  <p>9999.99.99</p>
+                  <div class="option calendar-table">
+                    <table>
+                      <colgroup>
+                        <col width="">
+                        <col width="">
+                        <col width="">
+                        <col width="">
+                        <col width="">
+                        <col width="">
+                        <col width="">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>일</th>
+                          <th>월</th>
+                          <th>화</th>
+                          <th>수</th>
+                          <th>목</th>
+                          <th>금</th>
+                          <th>토</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="today">1</td>
+                          <td>2</td>
+                          <td>3</td>
+                          <td>4</td>
+                          <td>5</td>
+                          <td>6</td>
+                          <td>7</td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>9</td>
+                          <td>10</td>
+                          <td>11</td>
+                          <td>12</td>
+                          <td>13</td>
+                          <td>14</td>
+                        </tr>
+                        <tr>
+                          <td>15</td>
+                          <td>16</td>
+                          <td>17</td>
+                          <td>18</td>
+                          <td>19</td>
+                          <td>20</td>
+                          <td>21</td>
+                        </tr>
+                        <tr>
+                          <td>22</td>
+                          <td>23</td>
+                          <td>24</td>
+                          <td>25</td>
+                          <td>26</td>
+                          <td>27</td>
+                          <td>28</td>
+                        </tr>
+                        <tr>
+                          <td>29</td>
+                          <td>30</td>
+                          <td>31</td>
+                          <td class="other-month">1</td>
+                          <td class="other-month">2</td>
+                          <td class="other-month">3</td>
+                          <td class="other-month">4</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="white-border fill">
+            <p>내용</p>
+            <div class="flex input-wrap edit-option-wrap">
+              <label for="#" class="input-label">
+                <div class="select white-border">
+                  <p>글꼴</p>
+                  <div class="option">
+                    <ul>
+                      <li><button class="none-style">글꼴명이 들어갑니다.</button></li>
+                      <li><button class="none-style">글꼴명이 들어갑니다.</button></li>
+                      <li><button class="none-style">글꼴명이 들어갑니다.</button></li>
+                      <li><button class="none-style">글꼴명이 들어갑니다.</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </label>
+              <label for="#" class="input-label">
+                <div class="select white-border">
+                  <p>9pt</p>
+                  <div class="option">
+                    <ul>
+                      <li>1px</li>
+                      <li><button class="none-style">1px</button></li>
+                      <li><button class="none-style">2px</button></li>
+                      <li><button class="none-style">3px</button></li>
+                      <li><button class="none-style">4px</button></li>
+                      <li><button class="none-style">5px</button></li>
+                      <li><button class="none-style">6px</button></li>
+                      <li><button class="none-style">7px</button></li>
+                      <li><button class="none-style">8px</button></li>
+                      <li><button class="none-style">9px</button></li>
+                      <li><button class="none-style">10px</button></li>
+                      <li><button class="none-style">11px</button></li>
+                      <li><button class="none-style">12px</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </label>
+              <ul class="flex edit-option-btn">
+                <li class="bold"><button class="btn none-style">가</button></li>
+                <li class="under-line"><button class="btn none-style">가</button></li>
+                <li class="center-line"><button class="btn none-style">가</button></li>
+                <li class="italic"><button class="btn none-style">가</button></li>
+                <li class="color-chip"><button class="btn none-style"></button></li>
+              </ul>
+              <ul class="flex edit-option-btn">
+                <li><button class="btn none-style"><i class="ri-menu-2-line"></i></button></li>
+                <li><button class="btn none-style"><i class="ri-menu-5-line"></i></button></li>
+                <li><button class="btn none-style"><i class="ri-menu-3-line"></i></button></li>
+                <li><button class="btn none-style"><i class="ri-menu-line"></i></button></li>
+              </ul>
+              <div class="btn-wrap">
+                <button class="btn line flex">
+                  <img src="./resource/images/icn-image-col.svg" alt="#">
+                  <p>사진</p>
+                </button>
+                <button class="btn line">
+                  <img src="./resource/images/icn-video-col.svg" alt="">
+                  <p>동영상</p>
+                </button>
+                <button class="btn line">
+                  <p>URL</p>
+                </button>
+                <button class="btn line">
+                  <p>HTML</p>
+                </button>
+              </div>
+            </div>
+            <div class="text-area">
+              <p class="place-holder">여기에 내용을 입력해주세요.</p>
+            </div>
+          </div>
+          <div class="file-wrap up-load">
+            <div class="flex heading">
+              <button class="btn">파일첨부</button>
+            </div>
+            <ul>
+              <li>
+                <button class="none-style btn-close"><img src="./resource/images/icn-close-white.svg" alt="파일 삭제하기"></button>
+                <a href="/resource/images/test-img-thumb.svg" download="" class="pdf">pdf파일입니다.pdf</a>
+              </li>
+              <li>
+                <button class="none-style btn-close"><img src="./resource/images/icn-close-white.svg" alt="파일 삭제하기"></button>
+                <a href="/resource/images/test-img-thumb.svg" download="" class="ppt">ppt파일입니다.ppt</a>
+              </li>
+              <li>
+                <button class="none-style btn-close"><img src="./resource/images/icn-close-white.svg" alt="파일 삭제하기"></button>
+                <a href="/resource/images/test-img-thumb.svg" download="" class="hangle">한글파일입니다.hwp</a>
+              </li>
+              <li>
+                <button class="none-style btn-close"><img src="./resource/images/icn-close-white.svg" alt="파일 삭제하기"></button>
+                <a href="/resource/images/test-img-thumb.svg" download="" class="excel">엑셀파일입니다.cell</a>
+              </li>
+              <li>
+                <button class="none-style btn-close"><img src="./resource/images/icn-close-white.svg" alt="파일 삭제하기"></button>
+                <a href="/resource/images/test-img-thumb.svg" download="" class="image">이미지파일입니다.png</a>
+              </li>
+              <li>
+                <button class="none-style btn-close"><img src="./resource/images/icn-close-white.svg" alt="파일 삭제하기"></button>
+                <a href="/resource/images/test-img-thumb.svg" download="" class="music">음악파일입니다.wav</a>
+              </li>
+              <li>
+                <button class="none-style btn-close"><img src="./resource/images/icn-close-white.svg" alt="파일 삭제하기"></button>
+                <a href="/resource/images/test-img-thumb.svg" download="" class="video">영상파일입니다.mp4</a>
+              </li>
+              <li>
+                <button class="none-style btn-close"><img src="./resource/images/icn-close-white.svg" alt="파일 삭제하기"></button>
+                <a href="/resource/images/test-img-thumb.svg" download="" class="word">워드파일입니다.word</a>
+              </li>
+              <li>
+                <button class="none-style btn-close"><img src="./resource/images/icn-close-white.svg" alt="파일 삭제하기"></button>
+                <a href="/resource/images/test-img-thumb.svg" download="">기타 확장자 파일입니다.psd</a>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-wrap write-done">
+            <button class="btn white">취소</button>
+            <button class="btn">글쓰기</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="dimmed">
+      <div class="popup box card yellow">
+        <div class="btn-wrap">
+          <button class="btn btn-close">
+            <img src="/resource/images/icn-close-black.svg" alt="팝업 닫기">
+          </button>
+        </div>
+        <div class="title">
+          <span class="user-name">사람이름<span>직책</span></span>
+        </div>
+        <dl>
+          <dt>
+            <img src="./resource/images/icn-vission.svg" alt="#">
+            <span>비전</span>
+          </dt>
+          <dd>그냥 쓰는대로 늘어납니다 비전이 길수도 있지</dd>
+        </dl>
+        <dl>
+          <dt>
+            <img src="./resource/images/icn-reason.svg" alt="#">
+            <span>출근이유</span>
+          </dt>
+          <dd>여기에 출근 이유가 들어갑니다. 한 두줄정도도 들어갑니다</dd>
+        </dl>
+        <p>텍스트입니다.</p>
+        <div class="flex date">
+          <p><span>NO.</span><span>08</span></p>
+          <p><span>2024.09.10 / 08:55</span></p>
+        </div>
+      </div>
+      <div class="popup box loginBox">
+        <div class="btn-wrap">
+          <button class="btn btn-close">
+            <img src="/resource/images/icn-close-white.svg" alt="팝업 닫기">
+          </button>
+        </div>
+        <img src="/resource/images/logo.svg" alt="#" class="logo">
+        <div class="input-wrap">
+          <label for="idLabel white-border">
+            <p>아이디</p>
+            <input type="text" placeholder="아이디를 입력하세요">
+          </label>
+          <label for="pwLabel white-border">
+            <p>비밀번호</p>
+            <input type="pw" placeholder="비밀번호를 입력하세요">
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
