@@ -297,11 +297,11 @@ input.input-id {
 }
 
 select {
-  background-image: url(/resource/images/icn_arrow-bottom.svg);
+  background-image: url(../images/icn_arrow-bottom.svg);
   background-position-x: 100%;
 
   &:focus {
-    background-image: url(/resource/images/icn_arrow-top.svg);
+    background-image: url(../images/icn_arrow-top.svg);
   }
 }
 
@@ -1194,35 +1194,35 @@ header .btn-wrap .m-menu .bar{
   background-position: center left;
   background-repeat: no-repeat;
   background-size: 18px;
-  background-image: url(/resource/images/icn-etc.svg);
+  background-image: url(../images/icn-etc.svg);
   &:hover{
     transform: translateX(4px);
     opacity: 0.6;
   }
 
   &.pdf{
-    background-image: url(/resource/images/icn-pdf.svg);
+    background-image: url(../images/icn-pdf.svg);
   }
   &.ppt{
-    background-image: url(/resource/images/icn-ppt.svg);
+    background-image: url(../images/icn-ppt.svg);
   }
   &.hwp{
-    background-image: url(/resource/images/icn-hwp.svg);
+    background-image: url(../images/icn-hwp.svg);
   }
   &.excel{
-    background-image: url(/resource/images/icn-excel.svg);
+    background-image: url(../images/icn-excel.svg);
   }
   &.image{
-    background-image: url(/resource/images/icn-image.svg);
+    background-image: url(../images/icn-image.svg);
   }
   &.music{
-    background-image: url(/resource/images/icn-music.svg);
+    background-image: url(../images/icn-music.svg);
   }
   &.video{
-    background-image: url(/resource/images/icn-video.svg);
+    background-image: url(../images/icn-video.svg);
   }
   &.word{
-    background-image: url(/resource/images/icn-word.svg);
+    background-image: url(../images/icn-word.svg);
   }
 }
 
