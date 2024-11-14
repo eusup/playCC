@@ -35,7 +35,7 @@ $(document).ready(function () {
   });
 
   // 카드 클릭시
-  $(".grid-wrap .card").click(function(e){
+  $(".grid-wrap .card > .inner").click(function(e){
     $(".popup.card").addClass("act");
     dimmedShow();
   });
@@ -48,7 +48,6 @@ $(document).ready(function () {
 
   // 팝업 닫기
   $(".popup .btn-close").click(function(){
-    $(".popup").removeClass("act");
     dimmedHide();
   });
 
@@ -81,7 +80,7 @@ $(document).ready(function () {
   });
 
   // 댓글수정
-  $(".comment-wrap ul.comment li .flex .btn-wrap .btn:first-child").click(function(){
+  $("#commentEdit").click(function(){
     $(this).parent(".edit").parent(".flex").siblings(".comment-inner").find("label").addClass("act");
   });
   $(".comment-wrap ul.comment li .comment-inner label.flex .btn").click(function(){
@@ -90,9 +89,21 @@ $(document).ready(function () {
     $(this).parent("label").siblings("p").text(editText)
   });
 
-  // 댓글삭제
-  $(".comment-wrap ul.comment li .flex .btn-wrap .btn:last-child").click(function(){
-    $(this).parent(".edit").parent(".flex").parent("li").remove();
+  // 댓글삭제 팝업
+  $("#commentDelate").click(function(){
+    $("#commentDelateBox").addClass("act");
+    dimmedShow();
+  });
+
+  // 댓글삭제 예 버튼
+  $(".alert .btn").click(function(){
+    dimmedHide();
+  });
+
+  // 탭
+  $(".tab ul li").click(function(){
+    $(this).addClass("act");
+    $(this).siblings("li").removeClass("act");
   });
 });
 
@@ -102,4 +113,5 @@ function dimmedShow(){
 
 function dimmedHide(){
   $(".dimmed").removeClass("act");
+  $(".dimmed .popup").removeClass("act");
 };
