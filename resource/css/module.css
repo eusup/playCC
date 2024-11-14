@@ -1009,6 +1009,9 @@ header .btn-wrap .m-menu .bar{
   width: calc((100% - (20px * 2)) / 3);
   height: auto;
   margin-bottom: 20px;
+}
+
+.contents-wrap .card-wrap .grid-wrap .box .inner{
   cursor: pointer;
 }
 
@@ -1441,9 +1444,6 @@ header .btn-wrap .m-menu .bar{
 
 .box table tbody tr{
   border-radius: 6px;
-  &:hover{
-    background-color: rgba(255,255,255,0.1);
-  }
 }
 /* notice table end */
 
@@ -1894,6 +1894,22 @@ header .btn-wrap .m-menu .bar{
   max-height: 100%;
   overflow: auto;
 }
+
+.alert{
+  max-width: 360px;
+  border: 1px solid rgba(255,255,255,0.2);
+  text-align: center;
+  background: linear-gradient(108deg, rgba(15, 37, 70, 0.40) 0%, rgba(35, 23, 64, 0.40) 25%, rgba(38, 24, 54, 0.40) 50%, rgba(54, 24, 39, 0.40) 70%, rgba(24, 54, 28, 0.40) 100%);
+}
+
+.alert p{
+  margin: 36px 0;
+  margin-top: 24px;
+}
+
+.alert .btn{
+  flex-shrink: 1;
+}
 /* popup end */
 
 /* samyung */
@@ -1998,7 +2014,7 @@ header .btn-wrap .m-menu .bar{
   height: 54px;
 }
 
-.myPage .black .user-pic button.btn{
+.myPage .black .user-pic .btn{
   padding: 8px 0;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
