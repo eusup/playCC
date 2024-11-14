@@ -34,9 +34,12 @@
     </header>
     <div class="contents-wrap flex">
       <nav>
+        <button class="btn btn-close">
+          <img src="./resource/images/icn-close-black.svg" alt="닫기">
+        </button>
         <ul class="box white">
           <li>
-            <a href="./index.html" class="flex ">
+            <a href="./index.html" class="flex act">
               <img src="./resource/images/icn-nav01.svg" alt="#">
               <span>감사카드</span>
             </a>
@@ -66,7 +69,7 @@
             </a>
           </li>
           <li>
-            <a href="./sub06_myPage.html" class="flex act">
+            <a href="./sub06_myPage.html" class="flex">
               <img src="./resource/images/icn-nav06.svg" alt="#">
               <span>마이페이지</span>
             </a>
@@ -89,7 +92,10 @@
             <div class="thumb">
               <img src="./resource/images/user-pic.svg" alt="사진을 추가해주세요">
             </div>
-            <button class="btn">수정하기</button>
+            <label for="uploadThumb" class="btn">
+              <span>수정하기</span>
+              <input type="file" id="uploadThumb" style="display: none;">
+            </label>
           </div>
           <div class="user-data">
             <p>
@@ -118,13 +124,13 @@
         </div>
         <div class="box tab">
           <ul>
-            <li class="act">
+            <li id="thanks" class="act">
               <button class="btn">감사</button>
             </li>
-            <li>
+            <li id="tothanks">
               <button class="btn">받은칭찬</button>
             </li>
-            <li>
+            <li id="fromthanks">
               <button class="btn">보낸칭찬</button>
             </li>
           </ul>
@@ -139,202 +145,182 @@
                 <div class="favorite"></div>
               </label>
             </div>
-            <dl>
-              <dt>
-                <img src="./resource/images/icn-vission.svg" alt="#">
-                <span>비전</span>
-              </dt>
-              <dd>그냥 쓰는대로 늘어납니다 비전이 길수도 있지</dd>
-            </dl>
-            <dl>
-              <dt>
-                <img src="./resource/images/icn-reason.svg" alt="#">
-                <span>출근이유</span>
-              </dt>
-              <dd>여기에 출근 이유가 들어갑니다. 한 두줄정도도 들어갑니다</dd>
-            </dl>
-            <p>텍스트입니다.</p>
-            <div class="flex date">
-              <p><span>NO.</span><span>08</span></p>
-              <p><span>2024.09.10 / 08:55</span></p>
+            <div class="inner">
+              <dl>
+                <dt>
+                  <img src="./resource/images/icn-vission.svg" alt="#">
+                  <span>비전</span>
+                </dt>
+                <dd>그냥 쓰는대로 늘어납니다 비전이 길수도 있지</dd>
+              </dl>
+              <dl>
+                <dt>
+                  <img src="./resource/images/icn-reason.svg" alt="#">
+                  <span>출근이유</span>
+                </dt>
+                <dd>여기에 출근 이유가 들어갑니다. 한 두줄정도도 들어갑니다</dd>
+              </dl>
+              <p>텍스트입니다.</p>
+              <div class="flex date">
+                <p><span>NO.</span><span>08</span></p>
+                <p><span>2024.09.10 / 08:55</span></p>
+              </div>
             </div>
           </div>
           <div class="box card blue">
             <div class="title">
               <span class="user-name">사람이름</span>
             </div>
-            <p>텍스트입니다.</p>
-            <div class="flex date">
-              <p><span>NO.</span><span>08</span></p>
-              <p><span>2024.09.10 / 08:55</span></p>
+            <div class="inner">
+              <p>텍스트입니다.</p>
+              <div class="flex date">
+                <p><span>NO.</span><span>08</span></p>
+                <p><span>2024.09.10 / 08:55</span></p>
+              </div>
             </div>
           </div>
           <div class="box card yellow">
             <div class="title">
               <span class="user-name">사람이름<span>직책</span></span>
-              <label for="favorite01" class="label-choice">
-                <input type="checkbox" id="favorite01">
+              <label for="favorite02" class="label-choice">
+                <input type="checkbox" id="favorite02">
                 <div class="favorite"></div>
               </label>
             </div>
-            <dl>
-              <dt>
-                <img src="./resource/images/icn-vission.svg" alt="#">
-                <span>비전</span>
-              </dt>
-              <dd>그냥 쓰는대로 늘어납니다 비전이 길수도 있지</dd>
-            </dl>
-            <dl>
-              <dt>
-                <img src="./resource/images/icn-reason.svg" alt="#">
-                <span>출근이유</span>
-              </dt>
-              <dd>여기에 출근 이유가 들어갑니다. 한 두줄정도도 들어갑니다</dd>
-            </dl>
-            <p>텍스트입니다.</p>
-            <div class="flex date">
-              <p><span>NO.</span><span>08</span></p>
-              <p><span>2024.09.10 / 08:55</span></p>
+            <div class="inner">
+              <dl>
+                <dt>
+                  <img src="./resource/images/icn-vission.svg" alt="#">
+                  <span>비전</span>
+                </dt>
+                <dd>그냥 쓰는대로 늘어납니다 비전이 길수도 있지</dd>
+              </dl>
+              <dl>
+                <dt>
+                  <img src="./resource/images/icn-reason.svg" alt="#">
+                  <span>출근이유</span>
+                </dt>
+                <dd>여기에 출근 이유가 들어갑니다. 한 두줄정도도 들어갑니다</dd>
+              </dl>
+              <p>텍스트입니다.</p>
+              <div class="flex date">
+                <p><span>NO.</span><span>08</span></p>
+                <p><span>2024.09.10 / 08:55</span></p>
+              </div>
             </div>
           </div>
           <div class="box card yellow">
             <div class="title">
               <span class="user-name">사람이름<span>직책</span></span>
-              <label for="favorite01" class="label-choice">
-                <input type="checkbox" id="favorite01">
+              <label for="favorite03" class="label-choice">
+                <input type="checkbox" id="favorite03">
                 <div class="favorite"></div>
               </label>
             </div>
-            <dl>
-              <dt>
-                <img src="./resource/images/icn-vission.svg" alt="#">
-                <span>비전</span>
-              </dt>
-              <dd>그냥 쓰는대로 늘어납니다 비전이 길수도 있지</dd>
-            </dl>
-            <dl>
-              <dt>
-                <img src="./resource/images/icn-reason.svg" alt="#">
-                <span>출근이유</span>
-              </dt>
-              <dd>여기에 출근 이유가 들어갑니다. 한 두줄정도도 들어갑니다</dd>
-            </dl>
-            <p>텍스트입니다.</p>
-            <div class="flex date">
-              <p><span>NO.</span><span>08</span></p>
-              <p><span>2024.09.10 / 08:55</span></p>
+            <div class="inner">
+              <dl>
+                <dt>
+                  <img src="./resource/images/icn-vission.svg" alt="#">
+                  <span>비전</span>
+                </dt>
+                <dd>그냥 쓰는대로 늘어납니다 비전이 길수도 있지</dd>
+              </dl>
+              <dl>
+                <dt>
+                  <img src="./resource/images/icn-reason.svg" alt="#">
+                  <span>출근이유</span>
+                </dt>
+                <dd>여기에 출근 이유가 들어갑니다. 한 두줄정도도 들어갑니다</dd>
+              </dl>
+              <p>텍스트입니다.</p>
+              <div class="flex date">
+                <p><span>NO.</span><span>08</span></p>
+                <p><span>2024.09.10 / 08:55</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="box card blue">
+            <div class="title">
+              <span class="user-name">사람이름</span>
+            </div>
+            <div class="inner">
+              <p>텍스트입니다.</p>
+              <div class="flex date">
+                <p><span>NO.</span><span>08</span></p>
+                <p><span>2024.09.10 / 08:55</span></p>
+              </div>
             </div>
           </div>
           <div class="box card yellow">
             <div class="title">
               <span class="user-name">사람이름<span>직책</span></span>
-              <label for="favorite01" class="label-choice">
-                <input type="checkbox" id="favorite01">
+              <label for="favorite04" class="label-choice">
+                <input type="checkbox" id="favorite04">
                 <div class="favorite"></div>
               </label>
             </div>
-            <dl>
-              <dt>
-                <img src="./resource/images/icn-vission.svg" alt="#">
-                <span>비전</span>
-              </dt>
-              <dd>그냥 쓰는대로 늘어납니다 비전이 길수도 있지</dd>
-            </dl>
-            <dl>
-              <dt>
-                <img src="./resource/images/icn-reason.svg" alt="#">
-                <span>출근이유</span>
-              </dt>
-              <dd>여기에 출근 이유가 들어갑니다. 한 두줄정도도 들어갑니다</dd>
-            </dl>
-            <p>텍스트입니다.</p>
-            <div class="flex date">
-              <p><span>NO.</span><span>08</span></p>
-              <p><span>2024.09.10 / 08:55</span></p>
+            <div class="inner">
+              <dl>
+                <dt>
+                  <img src="./resource/images/icn-vission.svg" alt="#">
+                  <span>비전</span>
+                </dt>
+                <dd>그냥 쓰는대로 늘어납니다 비전이 길수도 있지</dd>
+              </dl>
+              <dl>
+                <dt>
+                  <img src="./resource/images/icn-reason.svg" alt="#">
+                  <span>출근이유</span>
+                </dt>
+                <dd>여기에 출근 이유가 들어갑니다. 한 두줄정도도 들어갑니다</dd>
+              </dl>
+              <p>텍스트입니다.</p>
+              <div class="flex date">
+                <p><span>NO.</span><span>08</span></p>
+                <p><span>2024.09.10 / 08:55</span></p>
+              </div>
             </div>
           </div>
           <div class="box card yellow">
             <div class="title">
               <span class="user-name">사람이름<span>직책</span></span>
-              <label for="favorite01" class="label-choice">
-                <input type="checkbox" id="favorite01">
+              <label for="favorite05" class="label-choice">
+                <input type="checkbox" id="favorite05">
                 <div class="favorite"></div>
               </label>
             </div>
-            <dl>
-              <dt>
-                <img src="./resource/images/icn-vission.svg" alt="#">
-                <span>비전</span>
-              </dt>
-              <dd>그냥 쓰는대로 늘어납니다 비전이 길수도 있지</dd>
-            </dl>
-            <dl>
-              <dt>
-                <img src="./resource/images/icn-reason.svg" alt="#">
-                <span>출근이유</span>
-              </dt>
-              <dd>여기에 출근 이유가 들어갑니다. 한 두줄정도도 들어갑니다</dd>
-            </dl>
-            <p>텍스트입니다.</p>
-            <div class="flex date">
-              <p><span>NO.</span><span>08</span></p>
-              <p><span>2024.09.10 / 08:55</span></p>
+            <div class="inner">
+              <dl>
+                <dt>
+                  <img src="./resource/images/icn-vission.svg" alt="#">
+                  <span>비전</span>
+                </dt>
+                <dd>그냥 쓰는대로 늘어납니다 비전이 길수도 있지</dd>
+              </dl>
+              <dl>
+                <dt>
+                  <img src="./resource/images/icn-reason.svg" alt="#">
+                  <span>출근이유</span>
+                </dt>
+                <dd>여기에 출근 이유가 들어갑니다. 한 두줄정도도 들어갑니다</dd>
+              </dl>
+              <p>텍스트입니다.</p>
+              <div class="flex date">
+                <p><span>NO.</span><span>08</span></p>
+                <p><span>2024.09.10 / 08:55</span></p>
+              </div>
             </div>
           </div>
-          <div class="box card yellow">
+          <div class="box card blue">
             <div class="title">
-              <span class="user-name">사람이름<span>직책</span></span>
-              <label for="favorite01" class="label-choice">
-                <input type="checkbox" id="favorite01">
-                <div class="favorite"></div>
-              </label>
+              <span class="user-name">사람이름</span>
             </div>
-            <dl>
-              <dt>
-                <img src="./resource/images/icn-vission.svg" alt="#">
-                <span>비전</span>
-              </dt>
-              <dd>그냥 쓰는대로 늘어납니다 비전이 길수도 있지</dd>
-            </dl>
-            <dl>
-              <dt>
-                <img src="./resource/images/icn-reason.svg" alt="#">
-                <span>출근이유</span>
-              </dt>
-              <dd>여기에 출근 이유가 들어갑니다. 한 두줄정도도 들어갑니다</dd>
-            </dl>
-            <p>텍스트입니다.</p>
-            <div class="flex date">
-              <p><span>NO.</span><span>08</span></p>
-              <p><span>2024.09.10 / 08:55</span></p>
-            </div>
-          </div>
-          <div class="box card yellow">
-            <div class="title">
-              <span class="user-name">사람이름<span>직책</span></span>
-              <label for="favorite01" class="label-choice">
-                <input type="checkbox" id="favorite01">
-                <div class="favorite"></div>
-              </label>
-            </div>
-            <dl>
-              <dt>
-                <img src="./resource/images/icn-vission.svg" alt="#">
-                <span>비전</span>
-              </dt>
-              <dd>그냥 쓰는대로 늘어납니다 비전이 길수도 있지</dd>
-            </dl>
-            <dl>
-              <dt>
-                <img src="./resource/images/icn-reason.svg" alt="#">
-                <span>출근이유</span>
-              </dt>
-              <dd>여기에 출근 이유가 들어갑니다. 한 두줄정도도 들어갑니다</dd>
-            </dl>
-            <p>텍스트입니다.</p>
-            <div class="flex date">
-              <p><span>NO.</span><span>08</span></p>
-              <p><span>2024.09.10 / 08:55</span></p>
+            <div class="inner">
+              <p>텍스트입니다.</p>
+              <div class="flex date">
+                <p><span>NO.</span><span>08</span></p>
+                <p><span>2024.09.10 / 08:55</span></p>
+              </div>
             </div>
           </div>
         </div>
@@ -389,6 +375,48 @@
         </div>
         <div class="btn-wrap">
           <button class="btn btn-login">로그인</button>
+        </div>
+      </div>
+      <div id="commentDelateBox" class="popup box commentDelate-box">
+        <p>댓글을 삭제하시겠습니까?</p>
+        <div class="btn-wrap">
+          <button class="btn white btn-no">아니오</button>
+          <button class="btn btn-yes">삭제</button>
+        </div>
+      </div>
+      <div class="popup box scadule-box">
+        <div class="btn-wrap">
+          <div class="title">
+            <span class="tag blue">연차</span>
+            <span>누구누구 생일</span>
+          </div>
+          <button class="btn btn-close">
+            <img src="./resource/images/icn-close-white.svg" alt="팝업 닫기">
+          </button>
+        </div>
+        <p>아 생일 너무 좋다</p>
+      </div>
+      <div class="popup box samyung-card">
+        <div class="btn-wrap">
+          <button class="btn btn-close">
+            <img src="./resource/images/icn-close-black.svg" alt="팝업 닫기">
+          </button>
+        </div>
+        <div class="inner">
+          <img src="./resource/images/samyung-bg.svg" alt="#">
+          <img src="./resource/images/samyung-bg.svg" alt="#">
+          <img src="./resource/images/samyung-bg.svg" alt="#">
+          <img src="./resource/images/samyung-bg.svg" alt="#">
+          <p class="title">사명선언문</p>
+          <div class="text">
+            <p class="user-name">나 김수환무의 사명은</p>
+            <span>여기에 사명을 막 적습니다.여기에 사명을 막 적습니다.여기에 사명을 막 적습니다.여기에 사명을 막 적습니다.여기에 사명을 막 적습니다.여기에 사명을 막 적습니다.여기에 사명을
+              막 적습니다.여기에 사명을 막 적습니다.</span>
+            <div class="flex date">
+              <span>9999.99.99</span>
+              <span>김수환무</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
